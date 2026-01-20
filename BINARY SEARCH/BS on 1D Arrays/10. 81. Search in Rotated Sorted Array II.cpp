@@ -12,6 +12,7 @@ public:
 
             if(nums[mid] == target) return true;
 
+            // Handle duplicates by skipping duplicates
             if(nums[start] == nums[mid] && nums[mid] == nums[end]) {
                 start++;
                 end--;
